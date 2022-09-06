@@ -1,0 +1,97 @@
+section
+    padding: 0 25px 0 70px
+    @media (max-width: 780px)
+        padding: 0 70px
+    @media (max-width: 500px)
+        padding: 0
+
+.container
+    display: grid
+    grid-template: auto 1fr / 1fr 270px
+    @media (max-width: 780px)
+        grid-template: 1fr / 1fr
+
+.author-card
+    &__img
+        width: 100%
+        height: 180px
+        position: relative
+        margin-bottom: 25px
+        & img
+            position: absolute
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__title
+        margin-bottom: 13px
+        & h3
+            font-size: 24px
+            line-height: 0.83
+            color: #626262
+    &__text
+        margin-bottom: 20px
+        & p
+            font-size: 12px
+            line-height: 1.67
+            color: #626262
+    & .social-btns
+        justify-content: start
+
+
+.sidebar
+    &-container
+        @media (max-width: 780px)
+            display: none
+    background: #fff
+    padding: 0 0 200px 25px
+    &__author
+        margin-bottom: 35px
+    &__recommendations
+        display: grid
+        gap: 10px
+        margin-bottom: 45px
+        & .article__category
+            margin-bottom: 4px
+        & .article__headline
+            margin-bottom: 0
+            padding-left: 20px
+            position: relative
+            & h2
+                font-size: 16px
+            &::before
+                content: ''
+                position: absolute
+                margin: auto
+                top: 0
+                left: 0
+                bottom: 0
+                width: 5px
+                height: 5px
+                border-radius: 50%
+                background-color: #b4ad9e
+        & .article__comment-btn a
+            font-size: 12px
+            padding-left: 20px
+    &__banner
+        width: 100%
+        height: 180px
+        position: relative
+        & img
+            position: absolute
+            width: 250px
+            height: 250px
+            object-fit: cover
+    &__btn button
+        padding: 10px 30px 10px 10px
+        transform: skew(10deg, 0)
+        background: #000
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        margin-left: -50px 
+        & i
+            color: #fff
+            transform: skew(-10deg, 0)
+
+

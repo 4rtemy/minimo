@@ -1,0 +1,143 @@
+section {
+  padding: 0 25px 0 70px;
+}
+@media (max-width: 780px) {
+  section {
+    padding: 0 70px;
+  }
+}
+@media (max-width: 500px) {
+  section {
+    padding: 0;
+  }
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+  -ms-grid-columns: 1fr 270px;
+      grid-template: auto 1fr/1fr 270px;
+}
+@media (max-width: 780px) {
+  .container {
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template: 1fr/1fr;
+  }
+}
+
+.author-card__img {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.author-card__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.author-card__title {
+  margin-bottom: 13px;
+}
+.author-card__title h3 {
+  font-size: 24px;
+  line-height: 0.83;
+  color: #626262;
+}
+.author-card__text {
+  margin-bottom: 20px;
+}
+.author-card__text p {
+  font-size: 12px;
+  line-height: 1.67;
+  color: #626262;
+}
+.author-card .social-btns {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.sidebar {
+  background: #fff;
+  padding: 0 0 200px 25px;
+}
+@media (max-width: 780px) {
+  .sidebar-container {
+    display: none;
+  }
+}
+.sidebar__author {
+  margin-bottom: 35px;
+}
+.sidebar__recommendations {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  margin-bottom: 45px;
+}
+.sidebar__recommendations .article__category {
+  margin-bottom: 4px;
+}
+.sidebar__recommendations .article__headline {
+  margin-bottom: 0;
+  padding-left: 20px;
+  position: relative;
+}
+.sidebar__recommendations .article__headline h2 {
+  font-size: 16px;
+}
+.sidebar__recommendations .article__headline::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #b4ad9e;
+}
+.sidebar__recommendations .article__comment-btn a {
+  font-size: 12px;
+  padding-left: 20px;
+}
+.sidebar__banner {
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+.sidebar__banner img {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sidebar__btn button {
+  padding: 10px 30px 10px 10px;
+  -webkit-transform: skew(10deg, 0);
+          transform: skew(10deg, 0);
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin-left: -50px;
+}
+.sidebar__btn button i {
+  color: #fff;
+  -webkit-transform: skew(-10deg, 0);
+          transform: skew(-10deg, 0);
+}

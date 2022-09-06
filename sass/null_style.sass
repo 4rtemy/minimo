@@ -1,0 +1,106 @@
+/////////////////////////////////
+//// Variables in Null Style ////
+/////////////////////////////////
+$ns_fontfamily: 'PlayfairDisplay', sans-serif
+$ns_fontsize: 14px
+$ns_lineheight: 24px
+$ns_fontsize-h1: 30px
+$ns_fontfamily-h1: 'PlayfairDisplay', sans-serif
+$ns_fontweight-h1: 400
+$ns_fontsize-h2: 30px
+$ns_fontfamily-h2: 'PlayfairDisplay', sans-serif
+$ns_fontweight-h2: 400
+$ns_fontsize-h3: inherit
+$ns_fontfamily-h3: inherit
+$ns_fontweight-h3: 700
+$ns_fontsize-h4: inherit
+$ns_fontfamily-h4: inherit
+$ns_fontweight-h4: 700
+$ns_fontsize-h5: inherit
+$ns_fontfamily-h5: inherit
+$ns_fontweight-h5: 700
+$ns_fontsize-h6: inherit
+$ns_fontfamily-h6: inherit
+$ns_fontweight-h6: 700
+/////////////////////////////////
+/////////////////////////////////
+/////////////////////////////////
+
+*
+  padding: 0
+  margin: 0
+  border: 0
+  font-family: $ns_fontfamily
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+\:focus, :active
+  outline: none
+
+a
+  &:focus, &:active, &:visited
+    color: inherit
+    outline: none
+
+
+nav, footer, header, aside
+  display: block
+
+html, body
+  height: 100%
+  width: 100%
+  font-size: $ns_fontsize
+  line-height: $ns_lineheight
+  -ms-text-size-adjust: 100%
+  -moz-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+input, button, textarea
+  font-family: inherit
+
+input::-ms-clear
+  display: none
+
+button
+  cursor: pointer
+
+  &::-moz-focus-inner
+    padding: 0
+    border: 0
+
+a
+  text-decoration: none
+
+  &:visited, &:hover
+    text-decoration: none
+
+ul li
+  list-style: none
+
+img
+  vertical-align: top
+
+h1
+  font-size: $ns_fontsize-h1
+  font-weight: $ns_fontweight-h1
+h2
+  font-size: $ns_fontsize-h2
+  font-weight: $ns_fontweight-h2
+h3
+  font-size: $ns_fontsize-h3
+  font-weight: $ns_fontweight-h3
+h4
+  font-size: $ns_fontsize-h4
+  font-weight: $ns_fontweight-h4
+h5
+  font-size: $ns_fontsize-h5
+  font-weight: $ns_fontweight-h5
+h6
+  font-size: $ns_fontsize-h6
+  font-weight: $ns_fontweight-h6
